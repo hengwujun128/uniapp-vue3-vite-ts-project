@@ -1,4 +1,13 @@
+/*
+ * @Author: 张泽全 hengwujun128@gmail.com
+ * @Date: 2023-11-20 20:55:53
+ * @LastEditors: 张泽全 hengwujun128@gmail.com
+ * @LastEditTime: 2025-05-20 15:48:03
+ * @Description:
+ * @FilePath: /my-uni-vue3-ts-vite-project/src/api/http.ts
+ */
 import axios from 'axios'
+import type { AxiosRequestHeaders } from 'axios'
 
 import { getFullURL } from '@/utils/http'
 
@@ -23,9 +32,11 @@ const instance = axios.create({
         method: method!.toUpperCase() as any,
         url: getFullURL(baseURL || '', url!, params, paramsSerializer),
         header: headers,
+        // timeout: config.timeout, 默认 60000
         data,
         dataType: 'json',
         responseType: config.responseType,
+        enableHttp2: true,
         success: (res: any) => {
           console.log('request success ↓↓')
           console.log(res)
@@ -45,9 +56,14 @@ const instance = axios.create({
 instance.interceptors.request.use((config) => {
   const { method, params } = config
   // 附带鉴权的token
-  const headers: any = {
+  const headers: AxiosRequestHeaders = {
     token: uni.getStorageSync('token')
   }
+
+  if (uni.getStorageSync('token')) {
+    headers.Authorization = `Bearer ${uni.getStorageSync('token')}`
+  }
+
   // 不缓存get请求
   if (method === 'get') {
     headers['Cache-Control'] = 'no-cache'

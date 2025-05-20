@@ -32,12 +32,14 @@
       }
     }
   ],
+  //
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
+  // 组件自动引入规则
   "easycom": {
     "custom": {
       "^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue"
