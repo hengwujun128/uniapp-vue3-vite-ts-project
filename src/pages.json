@@ -30,8 +30,46 @@
       "style": {
         "navigationBarTitleText": "UnoCSS 示例"
       }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "login"
+      }
     }
   ],
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#007AFF",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        // "iconPath": "static/tabbar/home.png",
+        // "selectedIconPath": "static/tabbar/home-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/pinia/index",
+        // "iconPath": "static/tabbar/store.png",
+        // "selectedIconPath": "static/tabbar/store-selected.png",
+        "text": "状态管理"
+      },
+      {
+        "pagePath": "pages/axios/index",
+        // "iconPath": "static/tabbar/api.png",
+        // "selectedIconPath": "static/tabbar/api-selected.png",
+        "text": "网络请求"
+      },
+      {
+        "pagePath": "pages/login/index",
+        // "iconPath": "static/tabbar/user.png",
+        // "selectedIconPath": "static/tabbar/user-selected.png",
+        "text": "我的"
+      }
+    ]
+  },
   //
   "globalStyle": {
     "navigationBarTextStyle": "black",
