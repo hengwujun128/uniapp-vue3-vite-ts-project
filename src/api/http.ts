@@ -2,7 +2,7 @@
  * @Author: 张泽全 hengwujun128@gmail.com
  * @Date: 2023-11-20 20:55:53
  * @LastEditors: 张泽全 hengwujun128@gmail.com
- * @LastEditTime: 2025-05-20 15:48:03
+ * @LastEditTime: 2025-05-21 09:18:52
  * @Description:
  * @FilePath: /my-uni-vue3-ts-vite-project/src/api/http.ts
  */
@@ -25,8 +25,7 @@ const instance = axios.create({
   adapter(config) {
     console.log('request adapter ↓↓')
     console.log(config)
-    const { url, method, data, params, headers, baseURL, paramsSerializer } =
-      config
+    const { url, method, data, params, headers, baseURL, paramsSerializer } = config
     return new Promise((resolve, reject) => {
       uni.request({
         method: method!.toUpperCase() as any,

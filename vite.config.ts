@@ -1,3 +1,11 @@
+/*
+ * @Author: 张泽全 hengwujun128@gmail.com
+ * @Date: 2023-11-20 20:55:53
+ * @LastEditors: 张泽全 hengwujun128@gmail.com
+ * @LastEditTime: 2025-05-21 09:03:41
+ * @Description:
+ * @FilePath: /my-uni-vue3-ts-vite-project/vite.config.ts
+ */
 import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
 import path from 'path'
@@ -15,8 +23,7 @@ export default defineConfig({
     host: '0.0.0.0',
     proxy: {
       '/api/': {
-        target:
-          'https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release',
+        target: 'https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release',
         changeOrigin: true,
         rewrite: (p) => p.replace(/^\/api/, '')
       },

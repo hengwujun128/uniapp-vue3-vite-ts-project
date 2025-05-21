@@ -1,7 +1,16 @@
+/*
+ * @Author: 张泽全 hengwujun128@gmail.com
+ * @Date: 2023-11-20 20:55:53
+ * @LastEditors: 张泽全 hengwujun128@gmail.com
+ * @LastEditTime: 2025-05-21 09:39:01
+ * @Description:
+ * @FilePath: /my-uni-vue3-ts-vite-project/src/main.ts
+ */
 import { createSSRApp } from 'vue'
 import * as Pinia from 'pinia'
 // @ts-ignore
-import uView from 'vk-uview-ui'
+// import uView from 'vk-uview-ui'
+import uView from './uni_modules/vk-uview-ui'
 import App from './App.vue'
 
 // unocss

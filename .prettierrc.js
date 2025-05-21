@@ -2,7 +2,7 @@
  * @Author: 张泽全 hengwujun128@gmail.com
  * @Date: 2023-11-20 20:55:53
  * @LastEditors: 张泽全 hengwujun128@gmail.com
- * @LastEditTime: 2025-05-20 19:01:58
+ * @LastEditTime: 2025-05-21 09:17:04
  * @Description:
  * @FilePath: /my-uni-vue3-ts-vite-project/.prettierrc.js
  */
@@ -17,5 +17,6 @@ module.exports = {
   trailingComma: 'none', // 是否使用尾逗号
   bracketSpacing: true, // 对象大括号直接是否有空格，默认为 true，效果：{ a: 1 }
   htmlWhitespaceSensitivity: 'strict' // 控制 HTML 文件的空格敏感度，默认为 css，可选值有：ignore、css、strict
-  // endOfLine: 'auto', // 换行符使用 lf/crlf/auto，默认为 auto
+  // endOfLine: 'auto' // 换行符使用 lf/crlf/auto，默认为 auto
 }
+

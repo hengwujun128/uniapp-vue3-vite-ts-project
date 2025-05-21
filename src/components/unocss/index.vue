@@ -2,7 +2,7 @@
  * @Author: 张泽全 hengwujun128@gmail.com
  * @Date: 2023-11-20 20:55:53
  * @LastEditors: 张泽全 hengwujun128@gmail.com
- * @LastEditTime: 2025-05-20 14:43:20
+ * @LastEditTime: 2025-05-21 09:04:36
  * @Description: 
  * @FilePath: /my-uni-vue3-ts-vite-project/src/components/unocss/index.vue
 -->
@@ -18,8 +18,6 @@
       class="bg-[url(https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg)]"
     ></view>
 
-    <view class="bg-#3498db/20 text-#3498db rounded" p="x2 y1"
-      >unocss demo</view
-    >
+    <view class="bg-#3498db/20 text-#3498db rounded" p="x2 y1">unocss demo</view>
   </view>
 </template>

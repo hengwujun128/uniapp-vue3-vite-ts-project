@@ -3,6 +3,7 @@ node_modules/
 unpackage/
 dist/
 wxcomponents
+uni_modules/
 
 # local env files
 .env.local

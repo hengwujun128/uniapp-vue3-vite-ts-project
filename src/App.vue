@@ -2,7 +2,7 @@
  * @Author: 张泽全 hengwujun128@gmail.com
  * @Date: 2023-11-20 20:55:53
  * @LastEditors: 张泽全 hengwujun128@gmail.com
- * @LastEditTime: 2025-05-20 19:15:25
+ * @LastEditTime: 2025-05-21 08:53:49
  * @Description: 
  * @FilePath: /my-uni-vue3-ts-vite-project/src/App.vue
 -->
@@ -21,5 +21,6 @@
   })
 </script>
 <style lang="scss">
-  @import 'vk-uview-ui/index.scss';
+  // @import 'vk-uview-ui/index.scss';
+  @import './uni_modules/vk-uview-ui/index.scss';
 </style>
